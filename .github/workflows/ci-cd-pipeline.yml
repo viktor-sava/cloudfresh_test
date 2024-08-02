@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11'
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
@@ -38,7 +38,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11'
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
@@ -54,7 +54,6 @@ jobs:
       uses: google-github-actions/setup-gcloud@v1
       with:
         project_id: ${{ secrets.GCP_PROJECT_ID }}
-        export_default_credentials: true
 
     - name: Deploy to App Engine
       run: |
