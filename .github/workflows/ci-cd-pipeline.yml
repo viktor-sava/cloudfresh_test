@@ -58,4 +58,5 @@ jobs:
 
     - name: Deploy to App Engine
       run: |
+        gcloud components update
         gcloud app deploy app.yaml --quiet
